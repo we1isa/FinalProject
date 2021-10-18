@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.Abstract
-{ 
-   public interface IProductDal : IEntityRepository<Product>//Product'ın DA'daki karşılığı
+{
+   public interface ICustomerDal:IEntityRepository<Customer>
     {
-       
     }
 }
