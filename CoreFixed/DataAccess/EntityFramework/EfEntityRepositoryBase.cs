@@ -16,7 +16,7 @@ namespace CoreFixed.DataAccess.EntityFramework
         public void Add(TEntity entity)
         {
             //IDisposable pattern Implementation of c#
-            using (TContext context = new TContext())//performans iyileştirmesi, belleği hızlıca temizleyerek fresh tutmak için
+            using (TContext context = new TContext())
             {
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
